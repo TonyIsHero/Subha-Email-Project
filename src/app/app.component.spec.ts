@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'email-client'`, () => {
+  it(`should have as title 'email-Sender-client'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('email-client');
+    expect(app.title).toEqual('email-Sender-client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('email-client app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('email-Sender-client app is running!');
   });
 });
